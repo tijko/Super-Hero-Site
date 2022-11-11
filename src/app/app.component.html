@@ -8,7 +8,7 @@
   Pick your favorite hero
   (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
 </div>
-<select [(ngModel)]="hero">
+<select [(ngModel)]="heroes">
   <ng-container *ngFor="let h of heroes">
     <ng-container *ngIf="showSad || h.emotion !== 'sad'">
       <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
