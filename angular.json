@@ -71,6 +71,7 @@
               "browserTarget": "angular.io-example:build:production"
             },
             "development": {
+	      "disableHostCheck": true,
               "browserTarget": "angular.io-example:build:development"
             }
           },
