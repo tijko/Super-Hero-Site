@@ -1,7 +1,6 @@
 <div>
   Pick your favorite hero
   (<label><input type="checkbox" checked (change)="show-sad = !show-sad">show sad</label>)
-</div>
 <select [(ngModel)]="hero">
   <ng-container *ngFor="let hero of heroes">
     <ng-container *ngIf="show-sad || hero.emotion !== 'sad'">
