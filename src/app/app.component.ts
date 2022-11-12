@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ShowSadComponent } from './show-sad/show-sad.component'
 
 @Component({
   selector: 'app-root',

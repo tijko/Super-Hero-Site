@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { ShowSadComponent } from '../show-sad/show-sad.component';
 
 @Component({
   selector: 'app-hero-detail',

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../hero';
+import { HeroService } from '../hero.service';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroesComponent } from '../heroes/heroes.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
   selector: 'app-show-sad',
@@ -11,7 +13,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
 })
 export class ShowSadComponent implements OnInit {
 
-  public showSad:boolean = 'false';
+  public showSad:boolean = false;
   public isChecked:boolean = false;
   constructor() { }
 
