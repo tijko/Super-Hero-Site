@@ -15,6 +15,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MyWidgetComponent } from './my-widget/my-widget.component';
+import { ShowSadComponent } from './show-sad/show-sad.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { MyWidgetComponent } from './my-widget/my-widget.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    MyWidgetComponent
+    MyWidgetComponent,
+    ShowSadComponent
   ],
   bootstrap: [ AppComponent ]
 })
