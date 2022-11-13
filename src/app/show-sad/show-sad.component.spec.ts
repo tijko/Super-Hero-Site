@@ -11,7 +11,8 @@ describe('ShowSadComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShowSadComponent ]
+      declarations: [ ShowSadComponent ],
+      imports: [ HttpTestingController, HttpClientTestingModule ]
     })
     .compileComponents();
 
