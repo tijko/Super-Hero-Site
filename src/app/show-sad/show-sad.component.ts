@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { Hero } from '../hero';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
@@ -6,7 +7,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
-  providers:[HeroesComponent],
+  providers:[HeroesComponent, HttpClientModule],
   selector: 'app-show-sad',
   templateUrl: './show-sad.component.html',
   styleUrls: ['./show-sad.component.css']
