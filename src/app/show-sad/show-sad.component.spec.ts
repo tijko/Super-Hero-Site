@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, 
+         HttpTestingController } from '@angular/common/http/testing';
+
 
 import { ShowSadComponent } from './show-sad.component';
 
