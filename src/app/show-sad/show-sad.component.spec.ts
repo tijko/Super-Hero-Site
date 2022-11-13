@@ -12,7 +12,7 @@ describe('ShowSadComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ShowSadComponent ],
-      imports: [ HttpTestingController, HttpClientTestingModule ]
+      imports: [ HttpClientTestingModule ]
     })
     .compileComponents();
 
