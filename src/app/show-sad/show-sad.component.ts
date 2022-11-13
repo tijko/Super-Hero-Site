@@ -17,10 +17,11 @@ export class ShowSadComponent implements OnInit {
   public showSad:boolean = false;
   public isChecked:boolean = false;
   public heroes:Hero[];
-  public var1:string[] = [];
+  public hero:Hero;
 
   constructor(public s:HeroesComponent) { 
       this.heroes = this.s.heroes;
+      this.hero = this.heroes[0];
   }
 
   ngOnInit(): void {
