@@ -11,11 +11,17 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
   templateUrl: './show-sad.component.html',
   styleUrls: ['./show-sad.component.css']
 })
+
 export class ShowSadComponent implements OnInit {
 
   public showSad:boolean = false;
   public isChecked:boolean = false;
-  constructor() { }
+  public heroes:Hero[];
+  public var1:string[] = [];
+
+  constructor(public s:HeroesComponent) { 
+      this.heroes = this.s.heroes;
+  }
 
   ngOnInit(): void {
   }
