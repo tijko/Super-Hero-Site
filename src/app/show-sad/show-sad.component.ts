@@ -7,6 +7,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
+  providers:[HeroesComponent],
   selector: 'app-show-sad',
   templateUrl: './show-sad.component.html',
   styleUrls: ['./show-sad.component.css']
