@@ -1,5 +1,5 @@
 pipeline {
-    tools { nodejs 'WebAppNodeJS' }
+    tools { nodejs 'SuperHeroAppNodeJS' }
     agent { label 'Jenkins-Agent'}
     stages {
         stage('Checkout') {
@@ -10,14 +10,14 @@ pipeline {
                 extensions: [],
                 gitTool: 'Default',
                 submoduleCfg: [],
-                userRemoteConfigs: [[url: 'https://github.com/tijko/WebApp.git']]
+                userRemoteConfigs: [[url: 'https://github.com/tijko/Super-Hero-Site.git']]
                ])
             }
         }
         stage('Cloning Source') {
             steps {
                 sh 'echo GIT sourcing'
-                git branch:'main', url:'https://github.com/tijko/WebApp.git'
+                git branch:'main', url:'https://github.com/tijko/Super-Hero-Site.git'
             }
         }
         stage('Install') {
